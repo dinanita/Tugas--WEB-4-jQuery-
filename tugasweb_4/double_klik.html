@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<script src="jquery.js"></script>
+	<script type="text/javascript">
+	var kondisi = false;
+	$(document).ready(function(){
+		$(".k1").dblclick(function(){
+			if (kondisi==true) {
+				$(".k1").addClass("merah");
+				kondisi=false;
+			}else {
+				$(".k1").removeClass("merah");
+				kondisi=true;
+			}
+		});
+	$(".k2").dblclick(function(){
+		if (kondisi==true) {
+			$(".k2").addClass("merah");
+			kondisi=false;
+		} else{
+			$(".k2").removeClass("merah");
+			kondisi=true;
+		}
+	});
+	$(".k3").dblclick(function(){
+		if (kondisi==true) {
+			$(".k3").addClass("merah");
+			kondisi=false;
+		}else{
+			$(".k3").removeClass("merah");
+			kondisi=true;
+		}
+	});
+	$(".k4").dblclick(function(){
+		if (kondisi==true) {
+			$(".k4").addClass("merah");
+			kondisi=false;
+		} else{
+			$(".k4").removeClass("merah");
+			kondisi=true;
+		}
+
+		});
+	});
+	</script>
+	<style type="text/css">
+	.kotak{
+		width: 75px;
+		height: 75px;
+		background-color: yellow;
+		margin: 10px;
+		border: 1px solid black;
+		float: left;
+	}
+	.merah{
+		background-color: red;
+	}
+	</style>
+</head>
+<body>
+<h3>klik 2x pada setiap kotak untuk mengubah warna</h3>
+<div class="kotak k1"></div> <div class="kotak k2"></div>
+<div class="kotak k3"></div> <div class="kotak k4"></div>
+</body>
+</html>
